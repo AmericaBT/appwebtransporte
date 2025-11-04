@@ -15,21 +15,23 @@
         <h2 class="text-wrapper-4">Bienvenido</h2>
         <img class="generic-avatar" src="icons/avatar.svg" alt="Avatar" />
 
-        <label class="text-wrapper-3" for="usuario">Usuario</label>
-        <div class="input-container-user">
-          <input type="text" id="usuario" class="input-text" placeholder="Ingresa tu usuario" />
-          <img class="user-icon" src="icons/usuario.svg" alt="Usuario" />
-        </div>
+        <form action="login.php" method="POST">
+          <label class="text-wrapper-3" for="usuario">Usuario</label>
+          <div class="input-container-user">
+            <input type="text" id="usuario" name="usuario" class="input-text" placeholder="Ingresa tu usuario" required />
+            <img class="user-icon" src="icons/usuario.svg" alt="Usuario" />
+          </div>
 
-        <label class="text-wrapper-2" for="password">Contraseña</label>
-        <div class="input-container-password">
-          <input type="password" id="password" class="input-text" placeholder="Ingresa tu contraseña" />
-          <img class="eye" src="icons/password.svg" alt="Ver contraseña" />
-        </div>
+          <label class="text-wrapper-2" for="password">Contraseña</label>
+          <div class="input-container-password">
+            <input type="password" id="password" name="password" class="input-text" placeholder="Ingresa tu contraseña" required />
+            <img class="eye" src="icons/password.svg" alt="Ver contraseña" />
+          </div>
 
-        <button class="log-in-botn" onclick="window.location.href='indexchoferes.php'">
-          LOGIN
-        </button>
+          <button class="log-in-botn" type="submit">
+            LOGIN
+          </button>
+        </form>
 
         <button class="div-wrapper" onclick="window.location.href='recuperarcontra.html'">
           <div class="text-wrapper-5">¿Olvidaste tu contraseña?</div>
