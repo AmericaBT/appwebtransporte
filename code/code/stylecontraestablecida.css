@@ -1,0 +1,83 @@
+.notificacion {
+  background-color: #919ec0;
+  aspect-ratio: 1.65;
+  width: 100%;
+  min-width: 1122px;
+  min-height: 678px;
+  position: relative;
+}
+
+.notificacion .rectangle {
+  position: absolute;
+  top: 58px;
+  left: 445px;
+  width: 533px;
+  height: 590px;
+  background-color: #ffffff;
+  box-shadow: 6px 4px 4px #00000059;
+}
+
+.notificacion .text-wrapper {
+  position: absolute;
+  top: 190px;
+  left: 470px;
+  font-family: "Urbanist-Medium", Helvetica;
+  font-weight: 500;
+  color: #0000009c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.notificacion .div {
+  position: absolute;
+  top: 122px;
+  left: 470px;
+  width: 361px;
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.notificacion .p {
+  position: absolute;
+  top: 243px;
+  left: 470px;
+  font-family: "Urbanist-Medium", Helvetica;
+  font-weight: 500;
+  color: #0000009c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.notificacion .check-circle {
+  position: absolute;
+  top: 337px;
+  left: 534px;
+  width: 55px;
+  height: 55px;
+  aspect-ratio: 1;
+}
+
+.notificacion .vector {
+  position: absolute;
+  width: 83.33%;
+  height: 83.33%;
+  top: 6.49%;
+  left: 6.52%;
+}
+
+.notificacion .img {
+  position: absolute;
+  width: 54.17%;
+  height: 41.71%;
+  top: 14.85%;
+  left: 35.68%;
+}

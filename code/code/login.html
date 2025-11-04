@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleglobals.css" />
+    <link rel="stylesheet" href="stylelogin.css" />
+    <title>Login Choferes</title>
+  </head>
+  <body>
+    <div class="login-chferes">
+      <div class="login">
+        <div class="rectangle"></div>
+
+        <h2 class="text-wrapper-4">Bienvenido</h2>
+        <img class="generic-avatar" src="icons/avatar.svg" alt="Avatar" />
+
+        <label class="text-wrapper-3" for="usuario">Usuario</label>
+        <div class="input-container-user">
+          <input type="text" id="usuario" class="input-text" placeholder="Ingresa tu usuario" />
+          <img class="user-icon" src="icons/usuario.svg" alt="Usuario" />
+        </div>
+
+        <label class="text-wrapper-2" for="password">Contraseña</label>
+        <div class="input-container-password">
+          <input type="password" id="password" class="input-text" placeholder="Ingresa tu contraseña" />
+          <img class="eye" src="icons/password.svg" alt="Ver contraseña" />
+        </div>
+
+        <button class="log-in-botn" onclick="window.location.href='indexchoferes.php'">
+          LOGIN
+        </button>
+
+        <button class="div-wrapper" onclick="window.location.href='recuperarcontra.html'">
+          <div class="text-wrapper-5">¿Olvidaste tu contraseña?</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
