@@ -1,17 +1,33 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.html");
+    exit();
+}
+
+// Conexión a la base de datos
+include __DIR__ . '/conexion.php';
+
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styleglobals.css" />
-    <link rel="stylesheet" href="stylechfaggp.css" />
+    <link rel="stylesheet" href="/css/styleglobals.css" />
+    <link rel="stylesheet" href="/css/stylechfaggp.css" />
   </head>
   <body>
     <div class="agg-alumnos-choferes">
 
       <!--Banner amarillo de la seccion-->
       <div class="banner-seccion"></div>
-      <button class="atras" onclick="window.location.href='choferes_pagos.html'">
+      <button class="atras" onclick="window.location.href='choferes_pagos.php'">
         <img class="iconatras" src="icons/return.svg" />
         <div class="seccion-name">Agregar Alumnos</div>
       </button>
@@ -70,7 +86,7 @@
 
       <div class="group-aggbtn">
         <div class="agregar1">
-          <button class="agregar" onclick="window.location.href='choferes_pagos.html'">
+          <button class="agregar" onclick="window.location.href='choferes_pagos.php'">
             <div class="button-name">Agregar</div>
             <img class="iconagg" src="icons/plus.svg" />
           </button>

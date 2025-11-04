@@ -1,10 +1,25 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.html");
+    exit();
+}
+
+// Conexión a la base de datos
+include __DIR__ . '/conexion.php';
+
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styleglobals.css" />
-    <link rel="stylesheet" href="stylechfagga.css?v=1.7" />
+    <link rel="stylesheet" href="/css/styleglobals.css" />
+    <link rel="stylesheet" href="/css/stylechfagga.css?v=1.7" />
   </head>
   <body>
     <div class="agg-alumnos-choferes">

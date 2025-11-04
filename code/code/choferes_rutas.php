@@ -1,10 +1,25 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.html");
+    exit();
+}
+
+// Conexión a la base de datos
+include __DIR__ . '/conexion.php';
+
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="sglobals.css" />
-    <link rel="stylesheet" href="stylerutas.css" />
+    <link rel="stylesheet" href="/css/styleglobals.css" />
+    <link rel="stylesheet" href="/css/stylerutas.css" />
   </head>
   <body>
     <div class="choferes-rutas">
@@ -19,20 +34,20 @@
         </button>
 
         <!--BOTON PAGOS--> 
-        <button class="pagos" onclick="window.location.href='choferes_pagos.html'">
+        <button class="pagos" onclick="window.location.href='choferes_pagos.php'">
           <img class="iconpag" src="icons/pagos.svg" />
           <div class="iconpag-name">pagos</div>
         </button>
 
         <!--BOTON REGISTROS--> 
-        <button class="registros" onclick="window.location.href='choferes_registros.html'">
+        <button class="registros" onclick="window.location.href='choferes_registros.php'">
           <img class="iconreporte" src="icons/reportes.svg" />
           <img class="iconlibro" src="icons/libroreportes.svg" />
           <div class="iconlibro-name">Registros</div>
         </button>
 
         <!--BOTON RUTAS--> 
-        <button class="rutas" onclick="window.location.href='choferes_rutas.html'">
+        <button class="rutas" onclick="window.location.href='choferes_rutas.php'">
           <img class="iconrut" src="icons/rutas.svg" />
           <div class="iconrut-name">Rutas</div>
         </button>
@@ -94,7 +109,7 @@
       </div>
 
       <!--boton de agregar       <div class="agregar-botn">
-        <button class="agregar" onclick="window.location.href='choferesagregaralumnos.html'">
+        <button class="agregar" onclick="window.location.href='choferesagregaralumnos.php'">
           <div class="button-name">Agregar</div>
           <img class="iconagg" src="icons/plus.svg" />
         </button>

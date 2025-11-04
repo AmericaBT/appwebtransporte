@@ -27,8 +27,8 @@ if (!$resultado) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styleglobals.css" />
-    <link rel="stylesheet" href="stylechoferes.css?v=1.7" />
+    <link rel="stylesheet" href="/css/styleglobals.css" />
+    <link rel="stylesheet" href="/css/stylechoferes.css" />
     <title>Alumnos</title>
 </head>
 <body>
@@ -41,18 +41,18 @@ if (!$resultado) {
             <div class="iconalum-name">Alumnos</div>
         </button>
 
-        <button class="pagos" onclick="window.location.href='choferes_pagos.html'">
+        <button class="pagos" onclick="window.location.href='choferes_pagos.php'">
             <img class="iconpag" src="icons/pagos.svg" />
             <div class="iconpag-name">Pagos</div>
         </button>
 
-        <button class="registros" onclick="window.location.href='choferes_registros.html'">
+        <button class="registros" onclick="window.location.href='choferes_registros.php'">
             <img class="iconreporte" src="icons/reportes.svg" />
             <img class="iconlibro" src="icons/libroreportes.svg" />
             <div class="iconlibro-name">Registros</div>
         </button>
 
-        <button class="rutas" onclick="window.location.href='choferes_rutas.html'">
+        <button class="rutas" onclick="window.location.href='choferes_rutas.php'">
             <img class="iconrut" src="icons/rutas.svg" />
             <div class="iconrut-name">Rutas</div>
         </button>
