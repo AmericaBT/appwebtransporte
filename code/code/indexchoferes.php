@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+//verifica si el usuario ha iniciado sesion
+if (!isset($_SESSION['usuario'])) {
+    //si no hay sesion, redirigir al login
+    header("Location: login.html");
+    exit();
+}
+
 include __DIR__ . '/conexion.php';
 
 if (!$conexion) {
