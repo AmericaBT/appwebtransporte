@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+// Verifica si el usuario ha iniciado sesión
 if (!isset($_SESSION['usuario'])) {
     header("Location: login.html");
     exit();
@@ -12,7 +13,15 @@ include __DIR__ . '/conexion.php';
 if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
+
+$query = "SELECT * FROM pagos ORDER BY id_pago DESC";
+$resultado = $conexion->query($query);
+
+if (!$resultado) {
+    die("Error en la consulta: " . $conexion->error);
+}
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,7 +34,7 @@ if (!$conexion) {
     <div class="choferes_pagos">
       <div class="botones">
 
-       <!--BOTON ALUMNOS--> 
+        <!--BOTON ALUMNOS--> 
         <button class="alumnos" onclick="window.location.href='indexchoferes.php'">
           <img class="iconalum" src="icons/alumnos.svg" />
           <div class="iconalum-name">Alumnos</div>
@@ -33,7 +42,7 @@ if (!$conexion) {
 
         <!--BOTON PAGOS--> 
         <button class="pagos" onclick="window.location.href='choferes_pagos.php'">
-          <div class="iconpag-name">pagos</div>
+          <div class="iconpag-name">Pagos</div>
           <img class="iconpag" src="icons/pagos.svg" />
         </button>
 
@@ -49,48 +58,46 @@ if (!$conexion) {
           <img class="iconrut" src="icons/rutas.svg" />
           <div class="iconrut-name">Rutas</div>
         </button>
-
       </div>
+
       <div class="table">
 
         <div class="group-table">
 
-          <div class="last"></div>
-          <div class="post"></div> 
-          <!--Lineas de la tabla-->    
+          <!-- Encabezado -->
+          <div class="encabezado-table">
+            <div>Id_pagos</div>
+            <div>Nombre</div>
+            <div>Apellidos</div>
+            <div>Ingreso</div>
+            <div>Estado</div>
+          </div>
 
-          <div class="linea-1"></div>
-          <div class="linea-2"></div>
-          <div class="linea-3"></div>
-          <div class="linea-4"></div>
-          <div class="linea-5"></div>
-          <div class="linea-6"></div>
-          <div class="linea-7"></div>
+          <!-- Contenido dinámico desde la base de datos -->
+          <?php
+          $contador = 1;
+          while ($fila = $resultado->fetch_assoc()) {
+              // Para evitar errores visuales si hay más de 7 registros
+              if ($contador > 7) break;
+          ?>
+            <div class="row">
+              <div><?php echo $fila['id_pago']; ?></div>
+              <div><?php echo htmlspecialchars($fila['nombre']); ?></div>
+              <div><?php echo htmlspecialchars($fila['apellidos']); ?></div>
+              <div>$<?php echo number_format($fila['ingreso'], 2); ?></div>
+              <div><?php echo htmlspecialchars($fila['estado']); ?></div>
+            </div>
+          <?php
+              $contador++;
+          }
+          ?>
 
-          <!--Encabezado de la tabla-->
-          <div class="encabezado-table"></div>
-
-          <!--contenido de la tabla por linea-->
-          <div class="firsttext-line-1">1</div>
-          <div class="firsttext-line-2">2</div>
-          <div class="firsttext-line-3">3</div>
-          <div class="firsttext-line-4">4</div>
-          <div class="firsttext-line-5">5</div>
-          <div class="firsttext-line-6">6</div>
-          <div class="firsttext-line-7">7</div>
+          <!-- Si no hay registros -->
+          <?php if ($resultado->num_rows == 0) { ?>
+            <div class="sin-datos">No hay pagos registrados.</div>
+          <?php } ?>
 
         </div>
-
-        <div class="encabezado-1">Id_pagos</div>
-        <div class="encabezado-2">Nombre</div>
-        <div class="encabezado-3">Apellidos</div>
-        <div class="encabezado-4">Ingreso</div>
-        <div class="encabezado-5">Estado</div>
-
-        <div class="text-2">Alyn Michel</div>
-        <div class="text-3">Santiago Trinidad</div>
-        <div class="text-5">Aprobado</div>
-        <div class="text-4">$00.00</div>
 
       </div>
 
@@ -103,12 +110,11 @@ if (!$conexion) {
       </div>
 
       <div class="agregar-botn">
-        <button class="agregar" onclick="window.location.href='choferesagregarpagos.html'">
+        <button class="agregar" onclick="window.location.href='choferesagregarpagos.php'">
           <div class="button-name">Agregar</div>
           <img class="iconagg" src="icons/plus.svg" />
         </button>
       </div>
-
     </div>
   </body>
 </html>

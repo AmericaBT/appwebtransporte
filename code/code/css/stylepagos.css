@@ -221,7 +221,7 @@
   height: 32px;
 } */
 
-/*rectangulo 7*/
+/*rectangulo 7
 .choferes_pagos .linea-7 {
   position: absolute;
   top: 374px;
@@ -231,7 +231,7 @@
   background-color: #eeeeee;
 }
 
-/* rectangulo 6*/
+/* rectangulo 6
 .choferes_pagos .linea-6 {
   position: absolute;
   top: 326px;
@@ -241,7 +241,7 @@
   background-color: #abbbe4;
 }
 
-/*rect5*/
+/*rect5
 .choferes_pagos .linea-5 {
   position: absolute;
   top: 278px;
@@ -251,7 +251,7 @@
   background-color: #eeeeee;
 }
 
-/* rectangulo 4*/
+/* rectangulo 4
 .choferes_pagos .linea-4 {
   position: absolute;
   top: 235px;
@@ -261,7 +261,7 @@
   background-color: #abbbe4;
 }
 
-/* rectangulo 3*/
+/* rectangulo 3
 .choferes_pagos .linea-3 {
   position: absolute;
   top: 190px;
@@ -271,7 +271,7 @@
   background-color: #eeeeee;
 }
 
-/* rectangulo 2*/
+/* rectangulo 2
 .choferes_pagos .linea-2 {
   position: absolute;
   top: 147px;
@@ -281,7 +281,7 @@
   background-color: #abbbe4;
 }
 
-/*rectangulo 1*/
+/*rectangulo 1
 .choferes_pagos .linea-1 {
   position: absolute;
   top: 97px;
@@ -289,18 +289,18 @@
   width: 752px;
   height: 32px;
   background-color: #eeeeee;
-}
+}*/
 
 .choferes_pagos .encabezado-table {
   position: absolute;
-  top: 44px;
-  left: 38px;
-  width: 752px;
+  top: -30px;
+  left: 0px;
+  width: 845px;
   height: 32px;
   background-color: #f7ce58;
 }
 
-/*f7ce58*/
+/*f7ce58
 
 .choferes_pagos .firsttext-line-7 {
   top: 383px;
@@ -539,7 +539,7 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-}
+}*/
 
 .choferes_pagos .seccion-name {
   top: 96px;
@@ -650,4 +650,56 @@
 .choferes_pagos .iconagg {
   width: 16px;
   height: 16px;
+}
+
+/* Tabla principal */
+.choferes_pagos .table {
+  position: absolute;
+  top: 200px; /* ajusta según tu diseño */
+  left: 355px;
+  width: 844px;
+  border-collapse: collapse;
+  font-family: "Urbanist-Medium", Helvetica;
+}
+
+/* Encabezado de la tabla */
+.encabezado-table {
+  display: flex;
+  background-color: #f7ce58;
+  font-weight: bold;
+  width: 100%;
+  height: 32px;
+  position: relative; /* relativo para que filas queden debajo */
+  margin-bottom: 2px;
+}
+
+.encabezado-table div {
+  flex: 1;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #ccc;
+}
+
+/* Filas dinámicas */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row div {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* Colores alternos */
+.row:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.row:nth-child(odd) {
+  background-color: #abbbe4;
 }
