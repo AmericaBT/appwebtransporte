@@ -91,10 +91,10 @@ if (!$conexion) {
         <div class="encabezado-3">Nombre</div>
         <div class="encabezado-4">Ingresos</div>
         <div class="encabezado-5">Estado</div>
-        <div class="text-2">00-00-0000</div>
-        <div class="text-3">Ruta Chavez</div>
+        <div class="text-2"></div>
+        <div class="text-3"></div>
         <div class="text-4"> </div>
-        <div class="text-5">Imprimir</div>
+        <div class="text-5"></div>
         
       </div>
 

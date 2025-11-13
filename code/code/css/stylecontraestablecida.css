@@ -1,4 +1,4 @@
-.notificacion {
+/*.notificacion {
   background-color: #919ec0;
   aspect-ratio: 1.65;
   width: 100%;
@@ -80,4 +80,154 @@
   height: 41.71%;
   top: 14.85%;
   left: 35.68%;
+}*/
+
+.notificacion {
+  background-color: #919ec0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Rectángulo blanco principal */
+.notificacion .rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 85vh;
+  background-color: #ffffff;
+  box-shadow: 6px 4px 4px #00000059;
+  border-radius: 8px;
+}
+
+/* Título principal */
+.notificacion .div {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  font-family: "Urbanist-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+}
+
+/* Texto arriba */
+.notificacion .text-wrapper {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Urbanist-Medium", Helvetica;
+  font-weight: 500;
+  color: #0000009c;
+  font-size: 16px;
+}
+
+/* Texto abajo */
+.notificacion .p {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Urbanist-Medium", Helvetica;
+  font-weight: 500;
+  color: #0000009c;
+  font-size: 16px;
+}
+
+/* Ícono de check */
+.notificacion .check-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+}
+
+
+/* =============== MEDIA QUERIES =============== */
+
+/* Tablets horizontales */
+@media (max-width: 1024px) {
+  .notificacion .rectangle {
+    width: 70%;
+    height: 80vh;
+  }
+
+  .notificacion .div {
+    font-size: 26px;
+  }
+
+  .notificacion .text-wrapper,
+  .notificacion .p {
+    font-size: 15px;
+  }
+}
+
+/* Tablets verticales */
+@media (max-width: 768px) {
+  .notificacion .rectangle {
+    width: 80%;
+    height: 75vh;
+  }
+
+  .notificacion .div {
+    font-size: 24px;
+  }
+
+  .notificacion .text-wrapper,
+  .notificacion .p {
+    font-size: 14px;
+  }
+
+  .notificacion .check-circle {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .notificacion .rectangle {
+    width: 90%;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .notificacion .div,
+  .notificacion .text-wrapper,
+  .notificacion .p {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .notificacion .div {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .notificacion .text-wrapper,
+  .notificacion .p {
+    font-size: 14px;
+    margin: 6px 0;
+  }
+
+  .notificacion .check-circle {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
 }
