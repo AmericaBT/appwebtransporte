@@ -32,7 +32,7 @@ if (!$resultado) {
     <title>Alumnos</title>
 </head>
 <body>
-<div class="alumnos-dueno">
+<div class="alumnos-chferes">
 
     <!--Seccion de botones-->
     <div class="botones">
