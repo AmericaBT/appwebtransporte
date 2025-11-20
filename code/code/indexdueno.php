@@ -28,11 +28,11 @@ if (!$resultado) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
-    <link rel="stylesheet" href="css/stylechoferes.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/styleduenos.css?v=<?php echo time(); ?>" />
     <title>Alumnos</title>
 </head>
 <body>
-<div class="alumnos-chferes">
+<div class="alumnos-duenos">
 
     <!--Seccion de botones-->
     <div class="botones">

@@ -1,4 +1,4 @@
-.choferes-registros {
+.choferes_pagos {
   background-color: #ffffff;
   overflow: hidden;
   width: 100%;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.choferes-registros .botones {
+.choferes_pagos .botones {
   position: absolute;
   top: 25px;
   left: 20px;
@@ -19,7 +19,7 @@
   border-radius: 55px;
 }
 
-.choferes-registros .alumnos {
+.choferes_pagos .alumnos {
   margin-left: 31px;
   width: 120px;
   height: 135px;
@@ -33,7 +33,7 @@
   aspect-ratio: 1;
 }
 
-.choferes-registros .iconalum {
+.choferes_pagos .iconalum {
   position: absolute;
   top: calc(50.00% - 32px);
   left: calc(50.00% - 60px);
@@ -42,7 +42,7 @@
   aspect-ratio: 2;
 }
 
-.choferes-registros .iconalum-name {
+.choferes_pagos .iconalum-name {
   top: 85px;
   left: 25px;
   font-family: "Urbanist-Medium", Helvetica;
@@ -56,7 +56,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .pagos {
+.choferes_pagos .pagos {
   margin-left: 28px;
   width: 125px;
   height: 129px;
@@ -72,7 +72,7 @@
   aspect-ratio: 1;
 }
 
-.choferes-registros .iconpag {
+.choferes_pagos .iconpag {
   position: absolute;
   top: calc(50.00% - 40px);
   left: calc(50.00% - 60px);
@@ -81,7 +81,7 @@
   aspect-ratio: 2;
 }
 
-.choferes-registros .iconpag-name {
+.choferes_pagos .iconpag-name {
   top: 82px;
   left: 38px;
   font-family: "Urbanist-Medium", Helvetica;
@@ -95,7 +95,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .registros {
+.choferes_pagos .registros {
   margin-left: 29px;
   width: 125px;
   height: 129px;
@@ -109,7 +109,7 @@
   aspect-ratio: 1;
 }
 
-.choferes-registros .iconreporte {
+.choferes_pagos .iconreporte {
   position: absolute;
   top: calc(50.00% - 42px);
   left: calc(50.00% - 45px);
@@ -117,7 +117,7 @@
   height: 70px;
 }
 
-.choferes-registros .iconlibro {
+.choferes_pagos .iconlibro {
   position: absolute;
   width: 21.85%;
   top: calc(50.00% - 27px);
@@ -125,7 +125,7 @@
   height: 40px;
 }
 
-.choferes-registros .iconlibro-name {
+.choferes_pagos .iconlibro-name {
   position: absolute;
   width: 40%;
   height: 11.09%;
@@ -140,7 +140,7 @@
   line-height: normal;
 }
 
-.choferes-registros .rutas {
+.choferes_pagos .rutas {
   margin-left: 29px;
   width: 129px;
   height: 129px;
@@ -154,7 +154,7 @@
   aspect-ratio: 1;
 }
 
-.choferes-registros .iconrut {
+.choferes_pagos .iconrut {
   position: absolute;
   top: 12px;
   left: calc(50.00% - 38px);
@@ -162,7 +162,7 @@
   height: 67px;
 }
 
-.choferes-registros .iconrut-name {
+.choferes_pagos .iconrut-name {
   position: absolute;
   height: 13.09%;
   top: 78.99%;
@@ -177,7 +177,7 @@
   line-height: normal;
 }
 
-.choferes-registros .table {
+.choferes_pagos .table {
   position: absolute;
   top: 162px;
   left: 355px;
@@ -185,7 +185,7 @@
   height: 457px;
 }
 
-.choferes-registros .group-table {
+.choferes_pagos .group-table {
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@
   height: 457px;
 }
  
-.choferes-registros .last {
+.choferes_pagos .last {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,8 +201,10 @@
   height: 457px;
   background-color: #919ec0a8;
 }
+/*borde superior 919cec0a8*/
 
-.choferes-registros .post {
+/*centro de la tabla*/
+.choferes_pagos .post {
   position: absolute;
   top: 26px;
   left: 27px;
@@ -211,15 +213,16 @@
   background-color: #d9d9d9;
 }
 
-.choferes-registros .rectangle {
+/* .choferes_pagos .rectangle {
   position: absolute;
   top: 372px;
   left: 38px;
   width: 752px;
   height: 32px;
-}
+} */
 
-.choferes-registros .linea-7 {
+/*rectangulo 7
+.choferes_pagos .linea-7 {
   position: absolute;
   top: 374px;
   left: 38px;
@@ -228,7 +231,8 @@
   background-color: #eeeeee;
 }
 
-.choferes-registros .linea-6 {
+/* rectangulo 6
+.choferes_pagos .linea-6 {
   position: absolute;
   top: 326px;
   left: 38px;
@@ -237,7 +241,8 @@
   background-color: #abbbe4;
 }
 
-.choferes-registros .linea-5 {
+/*rect5
+.choferes_pagos .linea-5 {
   position: absolute;
   top: 278px;
   left: 38px;
@@ -246,7 +251,8 @@
   background-color: #eeeeee;
 }
 
-.choferes-registros .linea-4 {
+/* rectangulo 4
+.choferes_pagos .linea-4 {
   position: absolute;
   top: 235px;
   left: 38px;
@@ -255,7 +261,8 @@
   background-color: #abbbe4;
 }
 
-.choferes-registros .linea-3 {
+/* rectangulo 3
+.choferes_pagos .linea-3 {
   position: absolute;
   top: 190px;
   left: 38px;
@@ -264,7 +271,8 @@
   background-color: #eeeeee;
 }
 
-.choferes-registros .linea-2 {
+/* rectangulo 2
+.choferes_pagos .linea-2 {
   position: absolute;
   top: 147px;
   left: 38px;
@@ -273,25 +281,28 @@
   background-color: #abbbe4;
 }
 
-.choferes-registros .linea-1 {
+/*rectangulo 1
+.choferes_pagos .linea-1 {
   position: absolute;
   top: 97px;
   left: 38px;
   width: 752px;
   height: 32px;
   background-color: #eeeeee;
-}
+}*/
 
-.choferes-registros .encabezado-table {
+.choferes_pagos .encabezado-table {
   position: absolute;
-  top: 44px;
-  left: 38px;
-  width: 752px;
+  top: -30px;
+  left: 0px;
+  width: 845px;
   height: 32px;
   background-color: #f7ce58;
 }
 
-.choferes-registros .firsttext-line-7 {
+/*f7ce58
+
+.choferes_pagos .firsttext-line-7 {
   top: 383px;
   left: 84px;
   position: absolute;
@@ -306,7 +317,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-6 {
+.choferes_pagos .firsttext-line-6 {
   top: 336px;
   left: 84px;
   position: absolute;
@@ -321,7 +332,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-5 {
+.choferes_pagos .firsttext-line-5 {
   top: 288px;
   left: 84px;
   position: absolute;
@@ -336,7 +347,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-4 {
+.choferes_pagos .firsttext-line-4 {
   top: 246px;
   left: 85px;
   position: absolute;
@@ -351,7 +362,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-3 {
+.choferes_pagos .firsttext-line-3 {
   top: 201px;
   left: 84px;
   position: absolute;
@@ -366,7 +377,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-2 {
+.choferes_pagos .firsttext-line-2 {
   top: 157px;
   left: 84px;
   position: absolute;
@@ -381,7 +392,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .firsttext-line-1 {
+.choferes_pagos .firsttext-line-1 {
   top: 106px;
   left: 84px;
   position: absolute;
@@ -396,7 +407,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .text-2 {
+.choferes_pagos .text-2 {
   position: absolute;
   top: 106px;
   left: 172px;
@@ -411,7 +422,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .encabezado-1 {
+.choferes_pagos .encabezado-1 {
   position: absolute;
   top: 53px;
   left: 68px;
@@ -425,7 +436,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .encabezado-2 {
+.choferes_pagos .encabezado-2 {
   position: absolute;
   top: 53px;
   left: 181px;
@@ -440,7 +451,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .encabezado-4 {
+.choferes_pagos .encabezado-4 {
   position: absolute;
   top: 53px;
   left: 522px;
@@ -455,7 +466,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .text-5 {
+.choferes_pagos .text-5 {
   position: absolute;
   top: 106px;
   left: 687px;
@@ -470,7 +481,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .text-4 {
+.choferes_pagos .text-4 {
   position: absolute;
   top: 106px;
   left: 473px;
@@ -485,7 +496,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .encabezado-5 {
+.choferes_pagos .encabezado-5 {
   position: absolute;
   top: 53px;
   left: 689px;
@@ -500,7 +511,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .encabezado-3 {
+.choferes_pagos .encabezado-3 {
   position: absolute;
   top: 53px;
   left: 331px;
@@ -515,7 +526,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .text-3 {
+.choferes_pagos .text-3 {
   position: absolute;
   top: 106px;
   left: 308px;
@@ -528,9 +539,9 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-}
+}*/
 
-.choferes-registros .seccion-name {
+.choferes_pagos .seccion-name {
   top: 96px;
   left: 255px;
   font-family: "Urbanist-ExtraBold", Helvetica;
@@ -543,7 +554,7 @@
   white-space: nowrap;
 }
 
-.choferes-registros .top {
+.choferes_pagos .top {
   position: absolute;
   top: 17px;
   left: 404px;
@@ -551,7 +562,7 @@
   height: 66px;
 }
 
-.choferes-registros .banner {
+.choferes_pagos .banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -560,7 +571,7 @@
   background-color: #919ec0;
 }
 
-.choferes-registros .iconapp {
+.choferes_pagos .iconapp {
   position: absolute;
   top: 13px;
   left: 659px;
@@ -569,7 +580,7 @@
   aspect-ratio: 1;
 }
 
-.choferes-registros .title-app {
+.choferes_pagos .title-app {
   position: absolute;
   top: 9px;
   left: 23px;
@@ -601,13 +612,13 @@
   transition: 0.1s ease;
 }
 
-.choferes-registros .agregar-botn {
+.choferes_pagos .agregar-botn {
   position: absolute;
-  top: 258px;
-  left: 1050px;
+  top: 105px;
+  left: 908px;
 }
 
-.choferes-registros .agregar {
+.choferes_pagos .agregar {
   background-color: #f7ce58;
   border: none;
   border-radius: 9px;
@@ -621,12 +632,12 @@
   transition: all 0.3s ease;
 }
 
-.choferes-registros .agregar:hover {
+.choferes_pagos .agregar:hover {
   background-color: #ffd84f;
   transform: scale(1.05);
 }
 
-.choferes-registros .button-name {
+.choferes_pagos .button-name {
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 500;
   color: #000;
@@ -636,7 +647,89 @@
   line-height: normal;
 }
 
-.choferes-registros .iconagg {
+.choferes_pagos .iconagg {
   width: 16px;
   height: 16px;
 }
+
+/* Tabla principal */
+.choferes_pagos .table {
+  position: absolute;
+  top: 200px; /* ajusta según tu diseño */
+  left: 355px;
+  width: 844px;
+  border-collapse: collapse;
+  font-family: "Urbanist-Medium", Helvetica;
+}
+
+/* Encabezado de la tabla */
+.encabezado-table {
+  display: flex;
+  background-color: #f7ce58;
+  font-weight: bold;
+  width: 100%;
+  height: 32px;
+  position: relative; /* relativo para que filas queden debajo */
+  margin-bottom: 2px;
+}
+
+.encabezado-table div {
+  flex: 1;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #ccc;
+}
+
+/* Filas dinámicas */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row div {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* Colores alternos */
+.row:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.row:nth-child(odd) {
+  background-color: #abbbe4;
+}
+
+.imprimir-botn {
+    position: absolute;
+    bottom: 500px;
+    right: 170px;
+}
+
+.imprimir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #f7ce58;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.imprimir:hover {
+    background: #f7cf589d;
+}
+
+.iconprint {
+    width: 28px;
+}
+

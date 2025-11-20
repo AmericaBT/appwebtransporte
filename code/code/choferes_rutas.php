@@ -54,10 +54,9 @@ if (!$conexion) {
 
       </div>
 
-      <!--seccion de la tabla-->
+      <!--seccion de la tabla
       <div class="table">
         
-        <!--rectangulos de la tabla-->
         <div class="group-table">
 
           <div class="last"></div>
@@ -73,7 +72,6 @@ if (!$conexion) {
           <div class="linea-2"></div>
           <div class="linea-1"></div>
 
-          <!--Contadores de la tabla-->
 
           <div class="firsttext-line-7">7</div>
           <div class="firsttext-line-6">6</div>
@@ -85,7 +83,6 @@ if (!$conexion) {
 
         </div>
 
-        <!--datos de la tabla-->
         <div class="encabezado-1">Id_rutas</div>
         <div class="encabezado-2">Fecha</div>
         <div class="encabezado-3">Nombre</div>
@@ -96,7 +93,7 @@ if (!$conexion) {
         <div class="text-4"> </div>
         <div class="text-5"></div>
         
-      </div>
+      </div>-->
 
       <!--Nombre de la seccion-->
       <div class="seccion-name">Rutas</div>

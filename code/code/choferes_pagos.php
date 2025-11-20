@@ -14,7 +14,7 @@ if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM pagos ORDER BY id_pago DESC";
+$query = "SELECT * FROM pagos ORDER BY id_pago ASC";
 $resultado = $conexion->query($query);
 
 if (!$resultado) {

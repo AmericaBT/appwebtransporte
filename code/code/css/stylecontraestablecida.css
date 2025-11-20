@@ -1,4 +1,4 @@
-/*.notificacion {
+.notificacion {
   background-color: #919ec0;
   aspect-ratio: 1.65;
   width: 100%;
@@ -80,8 +80,8 @@
   height: 41.71%;
   top: 14.85%;
   left: 35.68%;
-}*/
-
+}
+--------
 .notificacion {
   background-color: #919ec0;
   width: 100%;

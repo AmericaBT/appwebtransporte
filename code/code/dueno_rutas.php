@@ -101,12 +101,12 @@ if (!$conexion) {
         <div class="title-app">TRANSPORTE ESCOLAR</div>
       </div>
 
-      <!--boton de agregar       <div class="agregar-botn">
+      <div class="agregar-botn">
         <button class="agregar" onclick="window.location.href='choferesagregaralumnos.php'">
           <div class="button-name">Agregar</div>
           <img class="iconagg" src="icons/plus.svg" />
         </button>
-      </div>-->
+      </div>
     </div>
   </body>
 </html>
