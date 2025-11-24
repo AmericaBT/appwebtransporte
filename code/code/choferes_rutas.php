@@ -101,8 +101,10 @@ if (!$conexion) {
       <!--Banner del nombre de la appweb-->
       <div class="top">
         <div class="banner"></div>
-        <img class="icon-app" src="icons/iconapp.svg" />
-        <div class="title-app">TRANSPORTE ESCOLAR</div>
+        <button class="Salir" onclick="window.location.href='login.html'">
+          <img class="icon-app" src="icons/iconapp.svg" />
+          <div class="title-app">TRANSPORTE ESCOLAR</div>
+        </button>
       </div>
 
       <!--boton de agregar       <div class="agregar-botn">

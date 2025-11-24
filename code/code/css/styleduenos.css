@@ -74,15 +74,15 @@
 
 .alumnos-duenos .iconpag {
   position: absolute;
-  top: calc(50.00% - 40px);
+  top: calc(50.00% - 45px);
   left: calc(50.00% - 60px);
   width: 118px;
-  height: 65px;
+  height: 70px;
   aspect-ratio: 2;
 }
 
 .alumnos-duenos .iconpag-name {
-  top: 82px;
+  top: 90px;
   left: 38px;
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 550;
@@ -111,7 +111,7 @@
 
 .alumnos-duenos .iconreporte {
   position: absolute;
-  top: calc(50.00% - 42px);
+  top: calc(50.00% - 45px);
   left: calc(50.00% - 45px);
   width: 90px;
   height: 70px;
@@ -156,7 +156,7 @@
 
 .alumnos-duenos .iconrut {
   position: absolute;
-  top: 12px;
+  top: 20px;
   left: calc(50.00% - 38px);
   width: 70px;
   height: 67px;
@@ -165,7 +165,7 @@
 .alumnos-duenos .iconrut-name {
   position: absolute;
   height: 13.09%;
-  top: 78.99%;
+  top: 75.99%;
   left: calc(50.00% - 22px);
   width: 35px;
   font-family: "Urbanist-Medium", Helvetica;

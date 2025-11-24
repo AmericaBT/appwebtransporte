@@ -97,8 +97,10 @@ if (!$resultado) {
 
     <div class="top">
         <div class="banner"></div>
-        <img class="iconapp" src="icons/iconapp.svg" />
-        <div class="title-app">TRANSPORTE ESCOLAR</div>
+        <button class="Salir" onclick="window.location.href='login.html'">
+            <img class="iconapp" src="icons/iconapp.svg" />
+            <div class="title-app">TRANSPORTE ESCOLAR</div>
+        </button>
     </div>
 
     <!-- BOTÓN IMPRIMIR (NUEVO) -->

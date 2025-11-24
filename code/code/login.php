@@ -1,42 +1,38 @@
 <?php
 session_start();
-
-// Conexión con la base de datos
 include('conexion.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST['usuario'];
-    $password = $_POST['password'];
+    $usuario = trim($_POST['usuario']);
+    $password = trim($_POST['password']);
 
-    // Consulta a la base de datos
+    // Prevenir errores por caracteres raros
+    $usuario = mysqli_real_escape_string($conexion, $usuario);
+    $password = mysqli_real_escape_string($conexion, $password);
+
     $sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
-    $resultado = $conexion->query($sql);
+    $resultado = mysqli_query($conexion, $sql);
 
-    if ($resultado && $resultado->num_rows > 0) {
-        $fila = $resultado->fetch_assoc();
+    if ($resultado && mysqli_num_rows($resultado) > 0) {
+        $fila = mysqli_fetch_assoc($resultado);
+
         $_SESSION['usuario'] = $fila['usuario'];
         $_SESSION['rol'] = $fila['rol'];
 
         // Redirigir según el rol
-        switch ($fila['rol']) {
-            case 'chofer':
-                header("Location: indexchoferes.php");
-                break;
-            case 'dueno':
-                header("Location: indexdueno.php");
-                break;
-            case 'admin':
-                header("Location: indexadmin.php");
-                break;
-            default:
-                echo "Rol no reconocido.";
-                break;
+        if ($fila['rol'] === 'chofer') {
+            header("Location: indexchoferes.php");
+        } else if ($fila['rol'] === 'dueno') {
+            header("Location: indexdueno.php");
+        } else if ($fila['rol'] === 'admin') {
+            header("Location: indexadmin.php");
+        } else {
+            echo "Rol no reconocido.";
         }
         exit();
+
     } else {
         echo "<script>alert('Usuario o contraseña incorrectos'); window.location.href='login.html';</script>";
     }
-
-    $conexion->close();
 }
 ?>

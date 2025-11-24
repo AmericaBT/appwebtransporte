@@ -19,10 +19,10 @@ if (!$conexion) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
-    <link rel="stylesheet" href="css/stylerutas.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/stylerutasdueno.css?v=<?php echo time(); ?>" />
   </head>
   <body>
-    <div class="choferes-rutas">
+    <div class="duenos-rutas">
 
       <!--Seccion de botones-->
       <div class="botones">
@@ -36,7 +36,7 @@ if (!$conexion) {
         <!--BOTON PAGOS--> 
         <button class="pagos" onclick="window.location.href='dueno_pagos.php'">
           <img class="iconpag" src="icons/pagos.svg" />
-          <div class="iconpag-name">pagos</div>
+          <div class="iconpag-name">Pagos</div>
         </button>
 
         <!--BOTON RUTAS--> 
@@ -97,12 +97,14 @@ if (!$conexion) {
       <!--Banner del nombre de la appweb-->
       <div class="top">
         <div class="banner"></div>
-        <img class="icon-app" src="icons/iconapp.svg" />
-        <div class="title-app">TRANSPORTE ESCOLAR</div>
+        <button class="Salir" onclick="window.location.href='login.html'">
+          <img class="icon-app" src="icons/iconapp.svg" />
+          <div class="title-app">TRANSPORTE ESCOLAR</div>
+        </button>
       </div>
 
       <div class="agregar-botn">
-        <button class="agregar" onclick="window.location.href='choferesagregaralumnos.php'">
+        <button class="agregar" onclick="window.location.href='duenoagregarruta.php'">
           <div class="button-name">Agregar</div>
           <img class="iconagg" src="icons/plus.svg" />
         </button>

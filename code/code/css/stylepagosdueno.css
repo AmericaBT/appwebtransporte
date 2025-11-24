@@ -43,7 +43,7 @@
 }
 
 .duenos_pagos .iconalum-name {
-  top: 85px;
+  top: 90px;
   left: 25px;
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 550;
@@ -74,15 +74,15 @@
 
 .duenos_pagos .iconpag {
   position: absolute;
-  top: calc(50.00% - 40px);
+  top: calc(50.00% - 45px);
   left: calc(50.00% - 60px);
   width: 118px;
-  height: 65px;
+  height: 70px;
   aspect-ratio: 2;
 }
 
 .duenos_pagos .iconpag-name {
-  top: 82px;
+  top: 90px;
   left: 38px;
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 550;
@@ -111,7 +111,7 @@
 
 .duenos_pagos .iconreporte {
   position: absolute;
-  top: calc(50.00% - 42px);
+  top: calc(50.00% - 45px);
   left: calc(50.00% - 45px);
   width: 90px;
   height: 70px;
@@ -156,7 +156,7 @@
 
 .duenos_pagos .iconrut {
   position: absolute;
-  top: 12px;
+  top: 20px;
   left: calc(50.00% - 38px);
   width: 70px;
   height: 67px;
@@ -165,7 +165,7 @@
 .duenos_pagos .iconrut-name {
   position: absolute;
   height: 13.09%;
-  top: 78.99%;
+  top: 75.99%;
   left: calc(50.00% - 22px);
   width: 35px;
   font-family: "Urbanist-Medium", Helvetica;
@@ -221,245 +221,6 @@
   height: 32px;
   background-color: #f7ce58;
 }
-
-.duenos_pagos .firsttext-line-7 {
-  top: 383px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-6 {
-  top: 336px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-5 {
-  top: 288px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-4 {
-  top: 246px;
-  left: 85px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-3 {
-  top: 201px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-2 {
-  top: 157px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .firsttext-line-1 {
-  top: 106px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .text-2 {
-  position: absolute;
-  top: 106px;
-  left: 172px;
-  width: 82px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .encabezado-1 {
-  position: absolute;
-  top: 53px;
-  left: 68px;
-  width: 84px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .encabezado-2 {
-  position: absolute;
-  top: 53px;
-  left: 181px;
-  width: 79px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .encabezado-4 {
-  position: absolute;
-  top: 53px;
-  left: 522px;
-  width: 57px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .text-5 {
-  position: absolute;
-  top: 106px;
-  left: 687px;
-  width: 62px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .text-4 {
-  position: absolute;
-  top: 106px;
-  left: 473px;
-  width: 164px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .encabezado-5 {
-  position: absolute;
-  top: 53px;
-  left: 689px;
-  width: 47px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .encabezado-3 {
-  position: absolute;
-  top: 53px;
-  left: 331px;
-  width: 63px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos_pagos .text-3 {
-  position: absolute;
-  top: 106px;
-  left: 308px;
-  width: 114px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}*/
 
 .duenos_pagos .seccion-name {
   top: 96px;
