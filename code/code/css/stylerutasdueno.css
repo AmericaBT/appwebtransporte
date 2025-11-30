@@ -1,4 +1,4 @@
-.duenos-rutas {
+.duenos_rutas {
   background-color: #ffffff;
   overflow: hidden;
   width: 100%;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.duenos-rutas .botones {
+.duenos_rutas .botones {
   position: absolute;
   top: 25px;
   left: 20px;
@@ -19,7 +19,7 @@
   border-radius: 55px;
 }
 
-.duenos-rutas .alumnos {
+.duenos_rutas .alumnos {
   margin-left: 31px;
   width: 120px;
   height: 135px;
@@ -33,7 +33,7 @@
   aspect-ratio: 1;
 }
 
-.duenos-rutas .iconalum {
+.duenos_rutas .iconalum {
   position: absolute;
   top: calc(50.00% - 32px);
   left: calc(50.00% - 60px);
@@ -42,8 +42,8 @@
   aspect-ratio: 2;
 }
 
-.duenos-rutas .iconalum-name {
-  top: 90px;
+.duenos_rutas .iconalum-name {
+  top: 85px;
   left: 25px;
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 550;
@@ -56,7 +56,7 @@
   white-space: nowrap;
 }
 
-.duenos-rutas .pagos {
+.duenos_rutas .pagos {
   margin-left: 28px;
   width: 125px;
   height: 129px;
@@ -72,17 +72,17 @@
   aspect-ratio: 1;
 }
 
-.duenos-rutas .iconpag {
+.duenos_rutas .iconpag {
   position: absolute;
-  top: calc(50.00% - 45px);
+  top: calc(50.00% - 40px);
   left: calc(50.00% - 60px);
   width: 118px;
-  height: 70px;
+  height: 65px;
   aspect-ratio: 2;
 }
 
-.duenos-rutas .iconpag-name {
-  top: 90px;
+.duenos_rutas .iconpag-name {
+  top: 82px;
   left: 38px;
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 550;
@@ -95,7 +95,7 @@
   white-space: nowrap;
 }
 
-.duenos-rutas .registros {
+.duenos_rutas .registros {
   margin-left: 29px;
   width: 125px;
   height: 129px;
@@ -109,15 +109,15 @@
   aspect-ratio: 1;
 }
 
-.duenos-rutas .iconreporte {
+.duenos_rutas .iconreporte {
   position: absolute;
-  top: calc(50.00% - 45px);
+  top: calc(50.00% - 42px);
   left: calc(50.00% - 45px);
   width: 90px;
   height: 70px;
 }
 
-.duenos-rutas .iconlibro {
+.duenos_rutas .iconlibro {
   position: absolute;
   width: 21.85%;
   top: calc(50.00% - 27px);
@@ -125,7 +125,7 @@
   height: 40px;
 }
 
-.duenos-rutas .iconlibro-name {
+.duenos_rutas .iconlibro-name {
   position: absolute;
   width: 40%;
   height: 11.09%;
@@ -140,7 +140,7 @@
   line-height: normal;
 }
 
-.duenos-rutas .rutas {
+.duenos_rutas .rutas {
   margin-left: 29px;
   width: 129px;
   height: 129px;
@@ -154,18 +154,18 @@
   aspect-ratio: 1;
 }
 
-.duenos-rutas .iconrut {
+.duenos_rutas .iconrut {
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: calc(50.00% - 38px);
   width: 70px;
   height: 67px;
 }
 
-.duenos-rutas .iconrut-name {
+.duenos_rutas .iconrut-name {
   position: absolute;
   height: 13.09%;
-  top: 75.99%;
+  top: 78.99%;
   left: calc(50.00% - 22px);
   width: 35px;
   font-family: "Urbanist-Medium", Helvetica;
@@ -177,7 +177,7 @@
   line-height: normal;
 }
 
-.duenos-rutas .table {
+.duenos_rutas .table {
   position: absolute;
   top: 162px;
   left: 355px;
@@ -185,7 +185,7 @@
   height: 457px;
 }
 
-.duenos-rutas .group-table {
+.duenos_rutas .group-table {
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@
   height: 457px;
 }
  
-.duenos-rutas .last {
+.duenos_rutas .last {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,8 +201,10 @@
   height: 457px;
   background-color: #919ec0a8;
 }
+/*borde superior 919cec0a8*/
 
-.duenos-rutas .post {
+/*centro de la tabla*/
+.duenos_rutas .post {
   position: absolute;
   top: 26px;
   left: 27px;
@@ -211,326 +213,17 @@
   background-color: #d9d9d9;
 }
 
-.duenos-rutas .rectangle {
-  position: absolute;
-  top: 372px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-}
 
-.duenos-rutas .linea-7 {
+.duenos_rutas .encabezado-table {
   position: absolute;
-  top: 374px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.duenos-rutas .linea-6 {
-  position: absolute;
-  top: 326px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.duenos-rutas .linea-5 {
-  position: absolute;
-  top: 278px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.duenos-rutas .linea-4 {
-  position: absolute;
-  top: 235px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.duenos-rutas .linea-3 {
-  position: absolute;
-  top: 190px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.duenos-rutas .linea-2 {
-  position: absolute;
-  top: 147px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.duenos-rutas .linea-1 {
-  position: absolute;
-  top: 97px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.duenos-rutas .encabezado-table {
-  position: absolute;
-  top: 44px;
-  left: 38px;
-  width: 752px;
+  top: -30px;
+  left: 0px;
+  width: 845px;
   height: 32px;
   background-color: #f7ce58;
 }
 
-.duenos-rutas .firsttext-line-7 {
-  top: 383px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-6 {
-  top: 336px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-5 {
-  top: 288px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-4 {
-  top: 246px;
-  left: 85px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-3 {
-  top: 201px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-2 {
-  top: 157px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .firsttext-line-1 {
-  top: 106px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .text-2 {
-  position: absolute;
-  top: 106px;
-  left: 172px;
-  width: 82px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .encabezado-1 {
-  position: absolute;
-  top: 53px;
-  left: 68px;
-  width: 84px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .encabezado-2 {
-  position: absolute;
-  top: 53px;
-  left: 181px;
-  width: 79px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .encabezado-4 {
-  position: absolute;
-  top: 53px;
-  left: 522px;
-  width: 57px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .text-5 {
-  position: absolute;
-  top: 106px;
-  left: 687px;
-  width: 62px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .text-4 {
-  position: absolute;
-  top: 106px;
-  left: 473px;
-  width: 164px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .encabezado-5 {
-  position: absolute;
-  top: 53px;
-  left: 689px;
-  width: 47px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .encabezado-3 {
-  position: absolute;
-  top: 53px;
-  left: 331px;
-  width: 63px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .text-3 {
-  position: absolute;
-  top: 106px;
-  left: 308px;
-  width: 114px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.duenos-rutas .seccion-name {
+.duenos_rutas .seccion-name {
   top: 96px;
   left: 255px;
   font-family: "Urbanist-ExtraBold", Helvetica;
@@ -543,7 +236,7 @@
   white-space: nowrap;
 }
 
-.duenos-rutas .top {
+.duenos_rutas .top {
   position: absolute;
   top: 17px;
   left: 404px;
@@ -551,7 +244,7 @@
   height: 66px;
 }
 
-.duenos-rutas .banner {
+.duenos_rutas .banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -560,7 +253,7 @@
   background-color: #919ec0;
 }
 
-.duenos-rutas .icon-app {
+.duenos_rutas .iconapp {
   position: absolute;
   top: 13px;
   left: 659px;
@@ -569,7 +262,7 @@
   aspect-ratio: 1;
 }
 
-.duenos-rutas .title-app {
+.duenos_rutas .title-app {
   position: absolute;
   top: 9px;
   left: 23px;
@@ -601,13 +294,13 @@
   transition: 0.1s ease;
 }
 
-.duenos-rutas .agregar-botn {
+.duenos_rutas .agregar-botn {
   position: absolute;
   top: 105px;
   left: 908px;
 }
 
-.duenos-rutas .agregar {
+.duenos_rutas .agregar {
   background-color: #f7ce58;
   border: none;
   border-radius: 9px;
@@ -621,12 +314,12 @@
   transition: all 0.3s ease;
 }
 
-.duenos-rutas .agregar:hover {
+.duenos_rutas .agregar:hover {
   background-color: #ffd84f;
   transform: scale(1.05);
 }
 
-.duenos-rutas .button-name {
+.duenos_rutas .button-name {
   font-family: "Urbanist-Medium", Helvetica;
   font-weight: 500;
   color: #000;
@@ -636,33 +329,59 @@
   line-height: normal;
 }
 
-.duenos-rutas .iconagg {
+.duenos_rutas .iconagg {
   width: 16px;
   height: 16px;
 }
 
-
-.duenos-rutas .agregar-botn {
+/* Tabla principal */
+.duenos_rutas .table {
   position: absolute;
-  top: 105px;
-  left: 908px;
+  top: 200px; /* ajusta según tu diseño */
+  left: 355px;
+  width: 844px;
+  border-collapse: collapse;
+  font-family: "Urbanist-Medium", Helvetica;
 }
 
-.duenos-rutas .agregar {
-  background-color: #f7ce58;
-  border: none;
-  border-radius: 9px;
-  padding: 8px 20px;
+/* Encabezado de la tabla */
+.encabezado-table {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+  background-color: #f7ce58;
+  font-weight: bold;
+  width: 100%;
+  height: 32px;
+  position: relative; /* relativo para que filas queden debajo */
+  margin-bottom: 2px;
 }
 
-.duenos-rutas .agregar:hover {
-  background-color: #ffd84f;
-  transform: scale(1.05);
+.encabezado-table div {
+  flex: 1;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #ccc;
+}
+
+/* Filas dinámicas */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row div {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* Colores alternos */
+.row:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.row:nth-child(odd) {
+  background-color: #abbbe4;
 }

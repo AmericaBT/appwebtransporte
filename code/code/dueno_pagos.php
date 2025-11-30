@@ -24,92 +24,112 @@ if (!$resultado) {
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
-        <link rel="stylesheet" href="css/stylepagosdueno.css?v=<?php echo time(); ?>" />
-    </head>
-    <body>
-        <div class="duenos_pagos">
-            <div class="botones">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/stylepagosdueno.css?v=<?php echo time(); ?>" />
+</head>
 
-                <!--BOTON ALUMNOS--> 
-                <button class="alumnos" onclick="window.location.href='indexdueno.php'">
-                    <img class="iconalum" src="icons/alumnos.svg" />
-                    <div class="iconalum-name">Alumnos</div>
-                </button>
+<body>
+    <div class="duenos_pagos">
 
-                <!--BOTON PAGOS--> 
-                <button class="pagos" onclick="window.location.href='dueno_pagos.php'">
-                    <div class="iconpag-name">Pagos</div>
-                    <img class="iconpag" src="icons/pagos.svg" />
-                </button>
+        <!-- Botones laterales -->
+        <div class="botones">
 
-                <!--BOTON RUTAS--> 
-                <button class="rutas" onclick="window.location.href='dueno_rutas.php'">
-                    <img class="iconrut" src="icons/rutas.svg" />
-                    <div class="iconrut-name">Rutas</div>
-                </button>
-            </div>
+            <button class="alumnos" onclick="window.location.href='indexdueno.php'">
+                <img class="iconalum" src="icons/alumnos.svg" />
+                <div class="iconalum-name">Alumnos</div>
+            </button>
 
-            <div class="table">
+            <button class="pagos" onclick="window.location.href='dueno_pagos.php'">
+                <div class="iconpag-name">Pagos</div>
+                <img class="iconpag" src="icons/pagos.svg" />
+            </button>
 
-                <div class="group-table">
+            <button class="rutas" onclick="window.location.href='dueno_rutas.php'">
+                <img class="iconrut" src="icons/rutas.svg" />
+                <div class="iconrut-name">Rutas</div>
+            </button>
 
-                    <!-- Encabezado -->
-                    <div class="encabezado-table">
-                        <div>Id_pagos</div>
-                        <div>Nombre</div>
-                        <div>Apellidos</div>
-                        <div>Ingreso</div>
-                        <div>Estado</div>
-                    </div>
+        </div>
 
-                    <!-- Contenido dinámico desde la base de datos -->
-                    <?php
-                    $contador = 1;
-                    while ($fila = $resultado->fetch_assoc()) {
-                         // Para evitar errores visuales si hay más de 7 registros
-                         if ($contador > 7) break;
-                    ?>
-                        <div class="row">
-                            <div><?php echo $fila['id_pago']; ?></div>
-                            <div><?php echo htmlspecialchars($fila['nombre']); ?></div>
-                            <div><?php echo htmlspecialchars($fila['apellidos']); ?></div>
-                            <div>$<?php echo number_format($fila['ingreso'], 2); ?></div>
-                            <div><?php echo htmlspecialchars($fila['estado']); ?></div>
-                        </div>
-                    <?php
-                            $contador++;
-                    }
-                    ?>
+        <!-- Tabla -->
+        <div class="table">
+            <div class="group-table">
 
-                    <!-- Si no hay registros -->
-                    <?php if ($resultado->num_rows == 0) { ?>
-                        <div class="sin-datos">No hay pagos registrados.</div>
-                    <?php } ?>
-
+                <!-- Encabezado -->
+                <div class="encabezado-table">
+                    <div>Id_pagos</div>
+                    <div>Nombre</div>
+                    <div>Apellidos</div>
+                    <div>Ingreso</div>
+                    <div>Estado</div>
+                    <div>Acciones</div>
                 </div>
 
-            </div>
+                <!-- Contenido dinámico -->
+                <?php
+                $contador = 1;
+                while ($fila = $resultado->fetch_assoc()) {
+                    if ($contador > 7) break;
+                ?>
+                    <div class="row">
+                        <div><?php echo $fila['id_pago']; ?></div>
+                        <div><?php echo htmlspecialchars($fila['nombre']); ?></div>
+                        <div><?php echo htmlspecialchars($fila['apellidos']); ?></div>
+                        <div>$<?php echo number_format($fila['ingreso'], 2); ?></div>
 
-            <div class="seccion-name">Pagos</div>
+                        <div>
+                            <?php 
+                                if ($fila['estado'] == "Pendiente") echo "<span class='estado-pendiente'>Pendiente</span>";
+                                if ($fila['estado'] == "Aprobado") echo "<span class='estado-aprobado'>Aprobado</span>";
+                                if ($fila['estado'] == "Denegado") echo "<span class='estado-denegado'>Denegado</span>";
+                            ?>
+                        </div>
 
-            <div class="top">
-                <div class="banner"></div>
-                <button class="Salir" onclick="window.location.href='login.html'">
-                    <img class="iconapp" src="icons/iconapp.svg" />
-                    <div class="title-app">TRANSPORTE ESCOLAR</div>
-                </button>
-            </div>
+                        <div>
+                            <?php if ($fila['estado'] == "Pendiente") { ?>
+                                
+                                <!-- Botón VALIDAR -->
+                                <a href="validar_pago.php?id=<?php echo $fila['id_pago']; ?>">
+                                    <button class="btn-aprobado">Aprobado</button>
+                                </a>
 
-            <div class="agregar-botn">
-                <button class="agregar" onclick="window.location.href='duenoagregarpagos.php'">
-                    <div class="button-name">Agregar</div>
-                    <img class="iconagg" src="icons/plus.svg" />
-                </button>
+                                <!-- Botón DENEGAR -->
+                                <a href="denegar_pago.php?id=<?php echo $fila['id_pago']; ?>">
+                                    <button class="btn-denegado">Denegado</button>
+                                </a>
+
+                            <?php } else { ?>
+                                <span>—</span>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php
+                    $contador++;
+                }
+                ?>
+
+                <?php if ($resultado->num_rows == 0) { ?>
+                    <div class="sin-datos">No hay pagos registrados.</div>
+                <?php } ?>
+
             </div>
         </div>
-    </body>
+
+        <div class="seccion-name">Pagos</div>
+
+        <!-- Banner superior -->
+        <div class="top">
+            <div class="banner"></div>
+            <button class="Salir" onclick="window.location.href='login.html'">
+                <img class="iconapp" src="icons/iconapp.svg" />
+                <div class="title-app">TRANSPORTE ESCOLAR</div>
+            </button>
+        </div>
+
+        <!-- ELIMINADO EL BOTÓN DE AGREGAR -->
+    </div>
+</body>
 </html>

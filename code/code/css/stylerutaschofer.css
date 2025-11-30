@@ -1,0 +1,23 @@
+.chofer_rutas {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.group-table {
+    width: 90%;
+    margin: auto;
+    margin-top: 140px;
+}
+
+.encabezado-table, .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.encabezado-table {
+    background: #dcdcdc;
+    font-weight: bold;
+}
