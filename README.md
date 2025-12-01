@@ -106,19 +106,19 @@ database.sql
 ```
 localhost/appwebtransporte/login.html
 ```
-
+---
 2. Iniciar sesión usando uno de los roles:
 
 * **Dueño**
-* **Contraseñas**
-* usario: chofer1
-* contraseña: 1234
+* **Contraseñas:**
+* usario: dueno1
+* contraseña: 5678
 ---
 * **Chofer**
-* **Contraseñas**
-* usuario: admin1
-* contraseña: 5678
-
+* **Contraseñas:**
+* usuario: chofer1
+* contraseña: 1234
+---
 3. Administrar:
 
 * Alumnos
