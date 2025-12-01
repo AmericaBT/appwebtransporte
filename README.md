@@ -132,12 +132,10 @@ localhost/appwebtransporte/login.html
 ### 👤 **Kevin Eduardo Espinosa Baños**
 
 * GitHub: *(https://github.com/KevSant1)*
-* LinkedIn: *[enlace]*
 
 ### 👤 **Alyn Michel Santiago Trinidad**
 
-* GitHub: *[Agrega el nombre]*
-* LinkedIn: *[enlace]*
+* GitHub: *(https://github.com/minjii13)*
 
 ---
 
