@@ -110,7 +110,13 @@ localhost/appwebtransporte/login.html
 2. Iniciar sesión usando uno de los roles:
 
 * **Dueño**
+**Contraseñas**
+  usario: chofer1
+  contraseña: 1234
 * **Chofer**
+**Contraseñas**
+  usuario: admin1
+  contraseña: 5678
 
 3. Administrar:
 
