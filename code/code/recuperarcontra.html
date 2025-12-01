@@ -28,14 +28,23 @@
         <img class="iconatras" src="icons/return.svg" />
       </button>
 
-      <!--rectangulo amarillo-->
-      <button class="log-in-botn" onclick="window.location.href='contraseñaestablecida.html'">
+      <button class="log-in-botn" onclick="enviarCorreo()">
         Enviar
       </button>
 
-      <!--<div class="rectangle-amarillo">
-        <div class="title-btn">Restablecer contraseña</div>
-      </div>-->
+      <script>
+      function enviarCorreo() {
+        const correo = document.getElementById("email").value;
+
+        if(correo.trim() === ""){
+          alert("Ingresa un correo");
+        return;
+        }
+
+        // Redirige al PHP enviando el correo
+        window.location.href = "recuperarcontra.php?correo=" + encodeURIComponent(correo);
+      }
+      </script>
 
       <!--texto del recuadro-->
       <p class="p">Ingrese su correo electronico para recuperar tu contraseña</p>

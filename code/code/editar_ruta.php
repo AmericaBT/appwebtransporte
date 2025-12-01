@@ -5,8 +5,14 @@ if (!isset($_SESSION['usuario'])) {
     header("Location: login.html");
     exit();
 }
-?>
 
+include __DIR__ . '/conexion.php';
+
+$id = $_GET['id'];
+$sql = "SELECT * FROM rutas WHERE id_ruta = $id";
+$resultado = $conexion->query($sql);
+$ruta = $resultado->fetch_assoc();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,64 +25,52 @@ if (!isset($_SESSION['usuario'])) {
 
 <div class="agg-ruta">
 
-    <!-- LINEA AMARILLA -->
     <div class="banner-seccion"></div>
 
-    <!-- BANNER SUPERIOR -->
     <div class="group-banner-pag">
         <div class="banner"></div>
         <img class="iconapp" src="icons/iconapp.svg" />
         <div class="title-app">TRANSPORTE ESCOLAR</div>
     </div>
 
-    <!-- BOTÓN ATRÁS -->
-    <img
-        class="iconatras"
-        src="icons/return.svg"
-        onclick="window.location.href='dueno_rutas.php'"
-    />
+    <img class="iconatras" src="icons/return.svg" onclick="window.location.href='dueno_rutas.php'">
+    <div class="seccion-name">Editar Ruta</div>
 
-    <div class="seccion-name">Agregar Ruta</div>
+    <form action="update_ruta.php" method="POST">
+        <input type="hidden" name="id_ruta" value="<?= $ruta['id_ruta'] ?>">
 
-    <!-- FORMULARIO -->
-    <form action="insertar_ruta.php" method="POST">
         <div class="group-formulario">
             <div class="borde">
                 <div class="post">
 
-                    <!-- NOMBRE DE LA RUTA -->
                     <div class="group-nombre">
                         <label class="name-campo-1">Nombre de la Ruta</label>
-                        <input type="text" name="nombre_ruta" required>
+                        <input type="text" name="nombre_ruta" value="<?= $ruta['nombre_ruta'] ?>" required>
                     </div>
 
-                    <!-- DESCRIPCIÓN -->
                     <div class="group-apellidop">
                         <label class="name-campo-2">Descripción</label>
-                        <input type="text" name="descripcion" required>
+                        <input type="text" name="descripcion" value="<?= $ruta['descripcion'] ?>" required>
                     </div>
 
-                    <!-- HORARIO -->
                     <div class="group-apellidom">
                         <label class="name-campo-3">Horario</label>
-                        <input type="text" name="horario" required>
+                        <input type="text" name="horario" value="<?= $ruta['horario'] ?>" required>
                     </div>
 
-                    <!-- CHOFER ASIGNADO -->
                     <div class="group-escuela">
                         <label class="name-campo-4">Chofer asignado</label>
-                        <input type="text" name="chofer_asignado" required>
+                        <input type="text" name="chofer_asignado" value="<?= $ruta['chofer_asignado'] ?>" required>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <!-- BOTÓN AGREGAR -->
         <div class="group-aggbtn">
-            <button class="agregar1" type="submit" class="agregar">
-                    <div class="button-name">Agregar</div>
-                    <img class="iconagg" src="icons/plus.svg" />
+            <button class="agregar1" type="submit">
+                <div class="button-name">Guardar</div>
+                <img class="iconagg" src="icons/plus.svg" />
             </button>
         </div>
 

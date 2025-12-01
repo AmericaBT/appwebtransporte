@@ -45,7 +45,7 @@ if (!$conexion) {
         <div class="borde">
           <div class="post"></div>
         </div>
-        <form action="insertar_alumno.php" method="POST">
+        <form action="insertar_alumnoduenos.php" method="POST">
     
           <div class="group-nombre">
             <div class="name-campo-1">Nombre(s)</div>

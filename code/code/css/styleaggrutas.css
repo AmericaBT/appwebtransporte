@@ -232,9 +232,9 @@
 
 .agg-ruta .group-aggbtn {
   position: absolute;
-  top: 350px;
+  top: 465px;
   left: 800px;
-  width: 106px;
+  width: 200px;
   height: 33px;
 }
 
@@ -250,7 +250,7 @@
   position: absolute;
   width: 80.27%;
   top: 17.5%;
-  left: 3.64%;
+  left: 15.64%;
   font-family: "Urbanist-Extrabold", Helvetica;
   font-size: 16px;
   text-align: center;

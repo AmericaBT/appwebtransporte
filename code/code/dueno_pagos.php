@@ -29,6 +29,71 @@ if (!$resultado) {
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="css/stylepagosdueno.css?v=<?php echo time(); ?>" />
+<style>
+/* Contenedor con scroll vertical y horizontal */
+.duenos_rutas .table,
+.duenos_pagos .table {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Encabezado sticky funcionando correctamente */
+.duenos_rutas .table .encabezado-table,
+.duenos_pagos .table .encabezado-table {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+  background: #f7ce58;
+  display: flex;
+  border-bottom: 2px solid #d4b040;
+}
+
+/* Filas */
+.duenos_rutas .table .row,
+.duenos_pagos .table .row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Columnas */
+.duenos_rutas .encabezado-table > div,
+.duenos_rutas .table .row > div,
+.duenos_pagos .encabezado-table > div,
+.duenos_pagos .table .row > div {
+  flex: 1;
+  min-width: 100px;
+  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Columna acciones más angosta */
+.table .acciones {
+  flex: 0 0 150px !important;
+}
+
+.buscador-contenedor {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    margin-top: -275px; /* 🔥 Ajusta esta altura según dónde lo quieras */
+    margin-bottom: 10px;
+}
+
+.buscador-contenedor input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 14px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: 2px solid #888;
+    outline: none;
+}
+
+</style>    
 </head>
 
 <body>
@@ -128,8 +193,24 @@ if (!$resultado) {
                 <div class="title-app">TRANSPORTE ESCOLAR</div>
             </button>
         </div>
+            <!-- 🔎 FILTRO DE BÚSQUEDA – ahora sí debajo del banner -->
+        <div class="buscador-contenedor">
+            <input type="text" id="filtroInput" placeholder="Buscar alumno...">
+        </div>
+
 
         <!-- ELIMINADO EL BOTÓN DE AGREGAR -->
     </div>
+<script>
+document.getElementById("filtroInput").addEventListener("input", function () {
+    const filtro = this.value.toLowerCase();
+    const filas = document.querySelectorAll(".table .row");
+
+    filas.forEach(fila => {
+        const texto = fila.innerText.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? "" : "none";
+    });
+});
+</script>
 </body>
 </html>

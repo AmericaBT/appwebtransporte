@@ -385,3 +385,94 @@
 .row:nth-child(odd) {
   background-color: #abbbe4;
 }
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-editar,
+.btn-eliminar {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 10px;
+    border: 2px solid #000;
+    transition: 0.2s;
+}
+
+.btn-editar:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #E53935;
+    color: white;
+}
+
+/* Contenedor con scroll vertical y horizontal */
+.duenos_rutas .table,
+.duenos_rutas .table {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Encabezado sticky funcionando correctamente */
+.duenos_rutas .table .encabezado-table,
+.duenos_rutas .table .encabezado-table {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+  background: #f7ce58;
+  display: flex;
+  border-bottom: 2px solid #d4b040;
+}
+
+/* Filas */
+.duenos_rutas .table .row,
+.duenos_rutas .table .row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Columnas */
+.duenos_rutas .encabezado-table > div,
+.duenos_rutas .table .row > div,
+.duenos_rutas .encabezado-table > div,
+.duenos_rutas .table .row > div {
+  flex: 1;
+  min-width: 100px;
+  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Columna acciones más angosta */
+.table .acciones {
+  flex: 0 0 150px !important;
+}
+
+.buscador-contenedor {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    margin-top: -275px; /* 🔥 Ajusta esta altura según dónde lo quieras */
+    margin-bottom: 10px;
+}
+
+.buscador-contenedor input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 14px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: 2px solid #888;
+    outline: none;
+}

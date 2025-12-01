@@ -29,6 +29,84 @@ if (!$resultado) {
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="css/stylepagos.css?v=<?php echo time(); ?>" />
+
+    <style>
+/* Contenedor con scroll vertical y horizontal */
+.choferes_pagos .table,
+.alumnos-duenos .table {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Encabezado sticky funcionando correctamente */
+.choferes_pagos .table .encabezado-table,
+.alumnos-duenos .table .encabezado-table {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+  background: #f7ce58;
+  display: flex;
+  border-bottom: 2px solid #d4b040;
+}
+
+/* Filas */
+.choferes_pagos .table .row,
+.alumnos-duenos .table .row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Columnas */
+.choferes_pagos .encabezado-table > div,
+.choferes_pagos .table .row > div,
+.alumnos-duenos .encabezado-table > div,
+.alumnos-duenos .table .row > div {
+  flex: 1;
+  min-width: 100px;
+  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Columna acciones más angosta */
+.table .acciones {
+  flex: 0 0 150px !important;
+}
+
+/* Estética buscador 
+#filtroInput {
+  width: calc(100% - 100px);
+  max-width: 820px;
+  padding: 8px;
+  margin: 12px auto 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #999;
+  font-size: 15px;
+}*/
+
+.buscador-contenedor {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    margin-top: -275px; /* 🔥 Ajusta esta altura según dónde lo quieras */
+    margin-bottom: 10px;
+}
+
+.buscador-contenedor input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 14px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: 2px solid #888;
+    outline: none;
+}
+
+</style>
   </head>
   <body>
     <div class="choferes_pagos">
@@ -71,6 +149,7 @@ if (!$resultado) {
             <div>Apellidos</div>
             <div>Ingreso</div>
             <div>Estado</div>
+            <div>Acciones</div>
           </div>
 
           <!-- Contenido dinámico desde la base de datos -->
@@ -86,6 +165,13 @@ if (!$resultado) {
               <div><?php echo htmlspecialchars($fila['apellidos']); ?></div>
               <div>$<?php echo number_format($fila['ingreso'], 2); ?></div>
               <div><?php echo htmlspecialchars($fila['estado']); ?></div>
+
+              <!-- NUEVA COLUMNA -->
+              <div class="acciones">
+                <a class="btn-editar" href="editar_pago.php?id=<?php echo $fila['id_pago']; ?>">✏️ Editar</a>
+                <a class="btn-eliminar" href="eliminar_pago.php?id=<?php echo $fila['id_pago']; ?>"
+                  onclick="return confirm('¿Seguro que deseas eliminar este pago?');">🗑️ Eliminar</a>
+              </div>
             </div>
           <?php
               $contador++;
@@ -111,6 +197,11 @@ if (!$resultado) {
         </button>
       </div>
 
+      <!-- 🔎 FILTRO DE BÚSQUEDA – ahora sí debajo del banner -->
+      <div class="buscador-contenedor">
+        <input type="text" id="filtroInput" placeholder="Buscar pagos...">
+      </div>
+
       <div class="agregar-botn">
         <button class="agregar" onclick="window.location.href='choferesagregarpagos.php'">
           <div class="button-name">Agregar</div>
@@ -118,5 +209,18 @@ if (!$resultado) {
         </button>
       </div>
     </div>
+
+    <script>
+      document.getElementById("filtroInput").addEventListener("input", function () {
+      const filtro = this.value.toLowerCase();
+      const filas = document.querySelectorAll(".table .row");
+
+      filas.forEach(fila => {
+        const texto = fila.innerText.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? "" : "none";
+      });
+      });
+    </script>
+
   </body>
 </html>

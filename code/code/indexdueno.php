@@ -30,6 +30,84 @@ if (!$resultado) {
     <link rel="stylesheet" href="css/styleglobals.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="css/styleduenos.css?v=<?php echo time(); ?>" />
     <title>Alumnos</title>
+
+<style>
+/* Contenedor con scroll vertical y horizontal */
+.alumnos-duenos .table,
+.alumnos-duenos .table {
+  max-height: 430px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Encabezado sticky funcionando correctamente */
+.alumnos-duenos .table .encabezado-table,
+.alumnos-duenos .table .encabezado-table {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+  background: #f7ce58;
+  display: flex;
+  border-bottom: 2px solid #d4b040;
+}
+
+/* Filas */
+.alumnos-duenos .table .row,
+.alumnos-duenos .table .row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Columnas */
+.alumnos-duenos .encabezado-table > div,
+.alumnos-duenos .table .row > div,
+.alumnos-duenos .encabezado-table > div,
+.alumnos-duenos .table .row > div {
+  flex: 1;
+  min-width: 100px;
+  padding: 7px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Columna acciones más angosta */
+.table .acciones {
+  flex: 0 0 150px !important;
+}
+
+/* Estética buscador 
+#filtroInput {
+  width: calc(100% - 100px);
+  max-width: 820px;
+  padding: 8px;
+  margin: 12px auto 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #999;
+  font-size: 15px;
+}*/
+
+.buscador-contenedor {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    margin-top: -275px; /* 🔥 Ajusta esta altura según dónde lo quieras */
+    margin-bottom: 10px;
+}
+
+.buscador-contenedor input {
+    width: 60%;
+    max-width: 700px;
+    padding: 10px 14px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: 2px solid #888;
+    outline: none;
+}
+
+</style>
 </head>
 <body>
 <div class="alumnos-duenos">
@@ -62,6 +140,7 @@ if (!$resultado) {
         <div>Apellidos</div>
         <div>Escuela</div>
         <div>Turno</div>
+        <div>Acciones</div>
       </div>
 
       <!-- Filas dinámicas -->
@@ -72,6 +151,21 @@ if (!$resultado) {
         <div><?php echo $row['apellido_paterno'] . ' ' . $row['apellido_materno']; ?></div>
         <div><?php echo $row['escuela']; ?></div>
         <div><?php echo $row['turno']; ?></div>
+
+
+        <div class="acciones">
+                <button class="btn-editar"
+                    onclick="window.location.href='dueno_editar_alumno.php?id=<?= $row['id_alumno'] ?>'">
+                    ✏️ Editar
+                </button>
+
+                <button class="btn-eliminar"
+                    onclick="if(confirm('¿Seguro que deseas eliminar este alumno?')) 
+                    window.location.href='dueno_eliminar_alumno.php?id=<?= $row['id_alumno'] ?>'">
+                    🗑️ Eliminar
+                </button>
+        </div>
+
       </div>
       <?php endwhile; ?>
     </div>
@@ -89,6 +183,11 @@ if (!$resultado) {
         </button>
     </div>
 
+    <!-- 🔎 FILTRO DE BÚSQUEDA – ahora sí debajo del banner -->
+    <div class="buscador-contenedor">
+        <input type="text" id="filtroInput" placeholder="Buscar pago...">
+    </div>
+
     <!--Boton de agregar-->
     <div class="agregar-botn">
         <button class="agregar" onclick="window.location.href='duenoagregaralumnos.php'">
@@ -98,5 +197,18 @@ if (!$resultado) {
     </div>
 
 </div>
+
+<script>
+document.getElementById("filtroInput").addEventListener("input", function () {
+    const filtro = this.value.toLowerCase();
+    const filas = document.querySelectorAll(".table .row");
+
+    filas.forEach(fila => {
+        const texto = fila.innerText.toLowerCase();
+        fila.style.display = texto.includes(filtro) ? "" : "none";
+    });
+});
+</script>
+
 </body>
 </html>

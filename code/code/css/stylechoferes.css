@@ -211,77 +211,6 @@
   background-color: #d9d9d9;
 }
 
-/* .alumnos-chferes .rectangle {
-  position: absolute;
-  top: 372px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-} */
-/*
-.alumnos-chferes .linea-7 {
-  position: absolute;
-  top: 374px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.alumnos-chferes .linea-6 {
-  position: absolute;
-  top: 326px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.alumnos-chferes .linea-5 {
-  position: absolute;
-  top: 278px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.alumnos-chferes .linea-4 {
-  position: absolute;
-  top: 235px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.alumnos-chferes .linea-3 {
-  position: absolute;
-  top: 190px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}
-
-.alumnos-chferes .linea-2 {
-  position: absolute;
-  top: 147px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #abbbe4;
-}
-
-.alumnos-chferes .linea-1 {
-  position: absolute;
-  top: 97px;
-  left: 38px;
-  width: 752px;
-  height: 32px;
-  background-color: #eeeeee;
-}*/
-
 .alumnos-chferes .encabezado-table {
   position: absolute;
   top: -30px;
@@ -290,245 +219,6 @@
   height: 32px;
   background-color: #f7ce58;
 }
-/*
-.alumnos-chferes .firsttext-line-7 {
-  top: 383px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-6 {
-  top: 336px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-5 {
-  top: 288px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-4 {
-  top: 246px;
-  left: 85px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-3 {
-  top: 201px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-2 {
-  top: 157px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .firsttext-line-1 {
-  top: 106px;
-  left: 84px;
-  position: absolute;
-  width: 24px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .text-2 {
-  position: absolute;
-  top: 106px;
-  left: 172px;
-  width: 82px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .encabezado-1 {
-  position: absolute;
-  top: 53px;
-  left: 68px;
-  width: 84px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .encabezado-2 {
-  position: absolute;
-  top: 53px;
-  left: 181px;
-  width: 79px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .encabezado-4 {
-  position: absolute;
-  top: 53px;
-  left: 522px;
-  width: 57px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .text-5 {
-  position: absolute;
-  top: 106px;
-  left: 687px;
-  width: 62px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .text-4 {
-  position: absolute;
-  top: 106px;
-  width: 164px;
-  left: 473px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .encabezado-5 {
-  position: absolute;
-  top: 53px;
-  left: 689px;
-  width: 47px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .encabezado-3 {
-  position: absolute;
-  top: 53px;
-  left: 331px;
-  width: 63px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.alumnos-chferes .text-3 {
-  position: absolute;
-  top: 106px;
-  left: 308px;
-  width: 114px;
-  font-family: "Urbanist-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}*/
 
 .alumnos-chferes .seccion-name {
   top: 96px;
@@ -692,3 +382,32 @@
 .row:nth-child(odd) {
   background-color: #abbbe4;
 }
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-editar,
+.btn-eliminar {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    border: 2px solid #000;
+    transition: 0.2s;
+}
+
+.btn-editar:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #E53935;
+    color: white;
+}
+
